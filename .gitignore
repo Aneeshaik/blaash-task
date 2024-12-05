@@ -1,0 +1,28 @@
+# Node.js dependencies
+Frontend/node_modules/
+Backend/node_modules/
+
+# Logs
+Frontend/logs/
+Backend/logs/
+*.log
+
+# Environment files
+Frontend/.env
+Backend/.env
+
+# Build outputs
+Frontend/dist/
+Backend/dist/
+
+# Dependency lockfiles (optional, not recommended to ignore)
+Frontend/package-lock.json
+Backend/package-lock.json
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+
+# IDE settings
+.vscode/
+.idea/
