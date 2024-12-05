@@ -105,7 +105,7 @@ app.get('/oauth2callback', async (req, res) => {
         oauth2Client.setCredentials(tokens);
         userTokens = tokens; // Save tokens
         // localStorage.setItem('token', userTokens)
-        res.redirect('http://localhost:3001/home'); 
+        res.redirect('https://blaash-task.onrender.com/home'); 
         // res.send('Authentication successful! You can now fetch playlists.');
     } catch (error) {
         console.error('Error retrieving access token', error);
