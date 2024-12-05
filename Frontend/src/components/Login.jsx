@@ -10,7 +10,7 @@ const Login = () => {
 
     const sendOtp = async () => {
         try {
-            const response = await fetch('http://localhost:3000/send-otp', {
+            const response = await fetch('https://blaash-task-api.onrender.com/send-otp', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -32,7 +32,7 @@ const Login = () => {
 
     const verifyOtp = async () => {
         try {
-            const response = await fetch('http://localhost:3000/verify-otp', {
+            const response = await fetch('https://blaash-task-api.onrender.com/verify-otp', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -43,7 +43,7 @@ const Login = () => {
             if (data.success) {
                 alert('OTP verified successfully');
                 setIsOtpVerified(true);
-                window.location.href = 'http://localhost:3000/auth/google';
+                window.location.href = 'https://blaash-task-api.onrender.com/auth/google';
             } else {
                 alert('Invalid OTP. Please try again.');
             }
@@ -64,7 +64,7 @@ const Login = () => {
                         placeholder="Enter your email"
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
-                        style={{marginBottom: '10px', padding: '10px 15px', borderRadius: '10px', width: '300px !important' }}
+                        style={{marginBottom: '10px', padding: '10px 15px', borderRadius: '10px', width: '300px' }}
                     />
                     <button onClick={sendOtp} style={{ padding: '10px 15px', backgroundColor: '#006BCE', color: '#fff', borderRadius: '10px', border: '0px', cursor: 'pointer' }}>Send OTP</button>
                     </div>
