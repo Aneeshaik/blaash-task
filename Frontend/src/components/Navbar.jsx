@@ -9,7 +9,7 @@ const Navbar = () => {
 
     const fetchPlaylists = async () => {
         try {
-            const response = await fetch(`http://localhost:3000/playlists?email=${encodeURIComponent(email)}`); // Backend endpoint
+            const response = await fetch(`https://blaash-task-api.onrender.com/playlists?email=${encodeURIComponent(email)}`); // Backend endpoint
             if (!response.ok) {
                 throw new Error('Failed to fetch playlists');
             }

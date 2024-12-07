@@ -23,7 +23,7 @@ app.use(express.json());
 
 const CLIENT_ID = '1027861994345-c31g6uoudvtqop6r7coi4lnur3clfd5n.apps.googleusercontent.com';
 const CLIENT_SECRET = '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';
-const REDIRECT_URI = 'http://localhost:3000/oauth2callback';
+const REDIRECT_URI = 'https://blaash-task-api.onrender.com/oauth2callback';
 
 const oauth2Client = new google.auth.OAuth2(CLIENT_ID, CLIENT_SECRET, REDIRECT_URI);
 
